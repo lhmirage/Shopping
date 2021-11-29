@@ -1,6 +1,6 @@
 <template>
   <!-- 顶部通栏 -->
-  <nav></nav>
+  <app-navbar></app-navbar>
   <!-- 头部组件 -->
   <div class="main">
     <RouterView />
@@ -9,7 +9,9 @@
 </template>
 
 <script>
+import appNavbar from '@/components/app-navbar'
 export default {
+  components: { appNavbar },
   name: 'Layout'
 }
 </script>
